@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testform</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        h1 {
+        margin-left: 265px;
+        font-weight: bold;
+        font-size: 52px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(228, 88, 37)
+
+        }
+        legend {
+            font-weight:bold;
+            font-size: 17px;
+        }
+
+        fieldset {
+            margin: 30px 250px;
+            width: 900px;
+        }
+
+        input[type="text"] {
+            margin-top: 15px;
+            margin-left: 195px;
+        }
+
+        input[type="password"] {
+            margin-left: 168px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 242px;
+        }
+
+        select {
+            margin-left: 164px;
+            border-radius: 4px;
+        }
+        
+        textarea {
+            display: inline;
+            width: 420px;
+            height: 90px;
+            margin-left: 242px;
+            margin-bottom: 30px;
+        }
+
+        input[type="button"] {
+            margin-left: 750px;
+            margin-right: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+
+        }
+
+        button {
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        #male {
+            margin-left: 94.5px;
+        }
+        
+        #female {
+            margin-left: 122px;
+        }
+
+        #breakfast {
+            margin-left: -42.5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>STUDENT EXERCISE</h1>
+    <fieldset>
+        <legend>Testform</legend>
+        <form action="/student_questionmark.php" method="POST" target="_blank">
+            <label for="firstName">Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <span>Gender</span><span id="male"><input type="radio" id="male" name="gender" value="male"></span>
+            <label for="gender">Male</label>
+            <br>
+            <span id="female"><input type="radio" id="female" name="gender" value="female"></span>
+            <label for="gender">Female</label>
+            <br>
+            <br>
+            <label for="continents">Continent</label>
+            <select id="continents" name="continents">
+                <option value="select" selected disabled>Please select...</option>
+                <option value="europe">Europe</option>
+                <option value="nortAmerica">North America</option>
+                <option value="southAmerica">South America</option>
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="australia">Australia</option>
+                <option value="antartica">Antartica</option>
+            </select>
+            <br>
+            <br>
+            <span>Meals</span><span id="breakfast"><input type="checkbox" id="meal1" name="meal1" value="breakfast"></span>
+            <label>breakfast</label>
+            <br>
+            <br>
+            <input type="checkbox" id="meal2" name="meal2" value="lunch">
+            <label>lunch</label>
+            <br>
+            <br>
+            <input type="checkbox" id="meal3" name="meal3" value="dinner">
+            <label>dinner</label>
+            <br>
+            <br>
+            <div>Remark</div>
+            <textarea name="remark"></textarea>
+            <input type="button" value="Send"></input>
+            <button type="button" value="Cancel">Cancel</button>
+        </form>
+    </fieldset>
+</body>
+</html>
